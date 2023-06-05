@@ -116,6 +116,7 @@ const Filter = ({
                     onChange={(event) => handleChange(event)}
                   />
                   <Button
+                    className="boton"
                     variant="outline-light"
                     type="submit"
                     onClick={(event) => handleSubmit(event)}

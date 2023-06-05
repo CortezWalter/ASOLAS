@@ -26,3 +26,7 @@
 .d-flex {
     align-items: baseline !important;
 }
+
+.boton {
+    border-color: #d0006fd7 !important;
+}
