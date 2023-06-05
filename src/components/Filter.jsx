@@ -14,6 +14,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import "../style/index.css";
+import "../style/navbar.css"
 
 const Filter = ({
   name,
@@ -27,20 +28,20 @@ const Filter = ({
       {[false].map((expand) => (
         <Navbar key={expand} expand={expand} className="mb-3">
           <Container fluid>
-            {/* <Navbar.Brand href="#">Navbar Offcanvas</Navbar.Brand> */}
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
+              className="offcanvas" 
               id={`offcanvasNavbar-expand-${expand}`}
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
               placement="end"
               restoreFocus={false}
             >
-              <Offcanvas.Header closeButton>
-                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                  Categorías
+              <Offcanvas.Header closeButton className="offcanvas-header">
+                <Offcanvas.Title className="offcanvas-title" id={`offcanvasNavbarLabel-expand-${expand}`}>
+                  Categorías de productos
                 </Offcanvas.Title>
               </Offcanvas.Header>
-              <Offcanvas.Body>
+              <Offcanvas.Body className="offcanvas-body">
                 <Nav className="justify-content-end flex-grow-1 pe-3">
                   {/* Todos los botones de categorías menos los que tiene subcategorías */}
                   {sinSubcategory.map((category) => (
@@ -115,11 +116,11 @@ const Filter = ({
                     onChange={(event) => handleChange(event)}
                   />
                   <Button
-                    variant="outline-success"
+                    variant="outline-light"
                     type="submit"
                     onClick={(event) => handleSubmit(event)}
                   >
-                    Search
+                    Buscar
                   </Button>
                 </Form>
               </Offcanvas.Body>
