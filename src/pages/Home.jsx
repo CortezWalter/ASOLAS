@@ -3,9 +3,8 @@ import Header from "../components/Header";
 //import Searchbar from "../components/Searchbar";
 import Card from "../components/Card";
 import Filter from"../components/Filter"
-import Personas from "../components/personas";
+import Personas from "../components/Personas";
 import data from "../data/data";
-import "../style/index.css";
 import "../style/header.css";
 import { Navbar } from "react-bootstrap";
 
