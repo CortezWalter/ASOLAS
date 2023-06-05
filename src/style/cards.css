@@ -39,6 +39,7 @@
 }
 
 .titulos{
+    padding-top: 10px;
     font-family: "Jost", sans-serif;
     font-weight: bold;
     color: rgba(255,255,255,0.98);
