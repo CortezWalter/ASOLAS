@@ -88,6 +88,8 @@
     text-align: center;
 }
 
+/* Responsive para tablet */ 
+
 @media only screen and (max-width: 768px) {
     .Navbar_filter {
         height: 100%;
@@ -149,7 +151,32 @@
             animation: logo-spin infinite 20s linear;
         }
     }
+
+    .title {
+        font-family: "Medula One", cursive;
+        font-weight: 400;
+        font-size: 150px;
+        text-align: center;
+    }
+    
+    .subtitle {
+        font-family: "Jost", sans-serif;
+        font-size: 20px;
+        font-weight: 300;
+        text-align: center;
+        position: relative;
+        top: -15px;
+    }
+    
+    .showcase .slogan {
+        font-size: 20px;
+        font-weight: 500;
+        font-family: "Jost", sans-serif;
+        text-align: center;
+    }
 }
+
+/* Resposive para celular */
 
 @media only screen and (max-width: 414px) {
     .Navbar_filter {
